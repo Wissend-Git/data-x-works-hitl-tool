@@ -1,0 +1,79 @@
+[
+    {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Brand Name in Title",
+        "description": "Verify brand appears when required",
+        "pass_criteria": "Brand found in title",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "iPhone 17 Pro Max",
+        "notes": "Not required for generic informational pages or blogs unless specified by client."
+    },
+    {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Primary Keyword in Title",
+        "description": "Main target keyword appears in title",
+        "pass_criteria": "Exact or close match found",
+        "severity": "Critical",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "Latest Smartphone Models | Apple",
+        "notes": "Requires client-provided primary keyword list."
+    },
+    {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Promotional Spam",
+        "description": "Avoid excessive marketing words",
+        "pass_criteria": "Reasonable marketing language",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple Store",
+        "example_fail": "BEST CHEAP AMAZING APPLE IPHONE BUY NOW",
+        "notes": "Marketing terms are acceptable when used sparingly (e.g., Official Store)."
+    },
+    {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Poor Readability",
+        "description": "Title should be human-readable and meaningful",
+        "pass_criteria": "Natural sentence or phrase structure",
+        "severity": "Minor",
+        "example_pass": "Apple iPhone 17 Pro Max Official Store",
+        "example_fail": "Apple|iPhone|17|Pro|Max|Buy|Online",
+        "notes": "Consider user experience and search result appearance."
+    },
+    {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Empty Title Tag",
+        "description": "Title tag exists but contains no value",
+        "pass_criteria": "Title contains meaningful text",
+        "severity": "Critical",
+        "example_pass": "<title>Apple iPhone 17 Pro Max</title>",
+        "example_fail": "<title></title>",
+        "notes": "Treat empty and whitespace-only titles as failures."
+    },
+    {
+        "source": "Default",
+        "category": "Image Optimization",
+        "check_name": "Image Size",
+        "description": "Image size should be above 1000",
+        "pass_criteria": "1000",
+        "severity": "Major",
+        "example_pass": "1000x1000",
+        "example_fail": "1000",
+        "notes": "Treat empty and whitespace-only titles as failures."
+    },
+    {
+        "source": "Default",
+        "category": "Image Optimization",
+        "check_name": "Image Present",
+        "description": "Image will be present for respective product",
+        "pass_criteria": "https://sb.kaleidousercontent.com/67418/1920x1100/f4bbc1a5a1/bg.png",
+        "severity": "Major",
+        "example_pass": "https://sb.kaleidousercontent.com/67418/1920x1100/f4bbc1a5a1/bg.png",
+        "example_fail": "n/a",
+        "notes": "Treat empty and whitespace-only titles as failures."
+    }
+]

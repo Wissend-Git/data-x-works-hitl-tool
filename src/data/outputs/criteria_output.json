@@ -1,0 +1,302 @@
+[
+  {
+    "client_id": "CLI0001",
+    "project_name": "AITS",
+    "audit_core": "Title Mode",
+    "core_description": "",
+    "category_name": "Title Tag Optimization",
+    "audit_checks": [
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Brand Name in Title",
+        "description": "Verify brand appears when required",
+        "pass_criteria": "Brand found in title",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "iPhone 17 Pro Max",
+        "notes": "Not required for generic informational pages or blogs unless specified by client.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Primary Keyword in Title",
+        "description": "Main target keyword appears in title",
+        "pass_criteria": "Exact or close match found",
+        "severity": "Critical",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "Latest Smartphone Models | Apple",
+        "notes": "Requires client-provided primary keyword list.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Promotional Spam",
+        "description": "Avoid excessive marketing words",
+        "pass_criteria": "Reasonable marketing language",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple Store",
+        "example_fail": "BEST CHEAP AMAZING APPLE IPHONE BUY NOW",
+        "notes": "Marketing terms are acceptable when used sparingly (e.g., Official Store).",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Empty Title Tag",
+        "description": "Title tag exists but contains no value",
+        "pass_criteria": "Title contains meaningful text",
+        "severity": "Critical",
+        "example_pass": "<title>Apple iPhone 17 Pro Max</title>",
+        "example_fail": "<title></title>",
+        "notes": "Treat empty and whitespace-only titles as failures.",
+        "selected": true
+      },
+      {
+        "source": "Client",
+        "category": "Title Tag Optimization",
+        "check_name": "Title Too Short",
+        "description": "",
+        "pass_criteria": "Title should be contain main data",
+        "severity": "Major",
+        "example_pass": "test",
+        "example_fail": "test",
+        "notes": "",
+        "selected": true
+      }
+    ]
+  },
+  {
+    "client_id": "CLI0001",
+    "project_name": "Harvey Norman",
+    "audit_core": "On Page SEO - Title audit",
+    "core_description": "",
+    "category_name": "Title Tag Optimization",
+    "audit_checks": [
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Brand Name in Title",
+        "description": "Verify brand appears when required",
+        "pass_criteria": "Brand found in title",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "iPhone 17 Pro Max",
+        "notes": "Not required for generic informational pages or blogs unless specified by client.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Primary Keyword in Title",
+        "description": "Main target keyword appears in title",
+        "pass_criteria": "Exact or close match found",
+        "severity": "Critical",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "Latest Smartphone Models | Apple",
+        "notes": "Requires client-provided primary keyword list.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Promotional Spam",
+        "description": "Avoid excessive marketing words",
+        "pass_criteria": "Reasonable marketing language",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple Store",
+        "example_fail": "BEST CHEAP AMAZING APPLE IPHONE BUY NOW",
+        "notes": "Marketing terms are acceptable when used sparingly (e.g., Official Store).",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Poor Readability",
+        "description": "Title should be human-readable and meaningful",
+        "pass_criteria": "Natural sentence or phrase structure",
+        "severity": "Minor",
+        "example_pass": "Apple iPhone 17 Pro Max Official Store",
+        "example_fail": "Apple|iPhone|17|Pro|Max|Buy|Online",
+        "notes": "Consider user experience and search result appearance.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Empty Title Tag",
+        "description": "Title tag exists but contains no value",
+        "pass_criteria": "Title contains meaningful text",
+        "severity": "Critical",
+        "example_pass": "<title>Apple iPhone 17 Pro Max</title>",
+        "example_fail": "<title></title>",
+        "notes": "Treat empty and whitespace-only titles as failures.",
+        "selected": true
+      },
+      {
+        "source": "Client",
+        "category": "Title Tag Optimization",
+        "check_name": "Title Length Too Short",
+        "description": "Title may not provide enough context",
+        "pass_criteria": "≥ 30 characters",
+        "severity": "Minor",
+        "example_pass": "Apple iPhone 17 Pro Max | Official Store",
+        "example_fail": "iPhone 17 Pro",
+        "notes": "Character count excludes HTML tags.",
+        "selected": true
+      },
+      {
+        "source": "Client",
+        "category": "Title Tag Optimization",
+        "check_name": "Multiple Title Tag",
+        "description": "Check for duplicate title tags",
+        "pass_criteria": "Only one title tag exists",
+        "severity": "Major",
+        "example_pass": "<title>Apple iPhone 17 Pro Max | Apple</title>",
+        "example_fail": "<title>Apple iPhone 17 Pro Max</title><title>Buy Apple iPhone 17 Pro Max</title>",
+        "notes": "",
+        "selected": true
+      }
+    ]
+  },
+  {
+    "client_id": "CLI0001",
+    "project_name": "North40",
+    "audit_core": "Page - Title audit",
+    "core_description": "",
+    "category_name": "Title Tag Optimization",
+    "audit_checks": [
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Brand Name in Title",
+        "description": "Verify brand appears when required",
+        "pass_criteria": "Brand found in title",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "iPhone 17 Pro Max",
+        "notes": "Not required for generic informational pages or blogs unless specified by client.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Primary Keyword in Title",
+        "description": "Main target keyword appears in title",
+        "pass_criteria": "Exact or close match found",
+        "severity": "Critical",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "Latest Smartphone Models | Apple",
+        "notes": "Requires client-provided primary keyword list.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Empty Title Tag",
+        "description": "Title tag exists but contains no value",
+        "pass_criteria": "Title contains meaningful text",
+        "severity": "Critical",
+        "example_pass": "<title>Apple iPhone 17 Pro Max</title>",
+        "example_fail": "<title></title>",
+        "notes": "Treat empty and whitespace-only titles as failures.",
+        "selected": true
+      },
+      {
+        "source": "Client",
+        "category": "Title Tag Optimization",
+        "check_name": "Multiple Title Tag",
+        "description": "Check for duplicate title tags",
+        "pass_criteria": "Only one title tag exists",
+        "severity": "Major",
+        "example_pass": "<title>Apple iPhone 17 Pro Max | Apple</title>",
+        "example_fail": "<title>Apple iPhone 17 Pro Max</title><title>Buy Apple iPhone 17 Pro Max</title>",
+        "notes": "",
+        "selected": true
+      }
+    ]
+  },
+  {
+    "client_id": "CLI0001",
+    "project_name": "ABC",
+    "audit_core": "SEO - Attributes",
+    "core_description": "",
+    "category_name": "Title Tag Optimization",
+    "audit_checks": [
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Brand Name in Title",
+        "description": "Verify brand appears when required",
+        "pass_criteria": "Brand found in title",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "iPhone 17 Pro Max",
+        "notes": "Not required for generic informational pages or blogs unless specified by client.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Primary Keyword in Title",
+        "description": "Main target keyword appears in title",
+        "pass_criteria": "Exact or close match found",
+        "severity": "Critical",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "Latest Smartphone Models | Apple",
+        "notes": "Requires client-provided primary keyword list.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Promotional Spam",
+        "description": "Avoid excessive marketing words",
+        "pass_criteria": "Reasonable marketing language",
+        "severity": "Major",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple Store",
+        "example_fail": "BEST CHEAP AMAZING APPLE IPHONE BUY NOW",
+        "notes": "Marketing terms are acceptable when used sparingly (e.g., Official Store).",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Poor Readability",
+        "description": "Title should be human-readable and meaningful",
+        "pass_criteria": "Natural sentence or phrase structure",
+        "severity": "Minor",
+        "example_pass": "Apple iPhone 17 Pro Max Official Store",
+        "example_fail": "Apple|iPhone|17|Pro|Max|Buy|Online",
+        "notes": "Consider user experience and search result appearance.",
+        "selected": true
+      },
+      {
+        "source": "Default",
+        "category": "Title Tag Optimization",
+        "check_name": "Empty Title Tag",
+        "description": "Title tag exists but contains no value",
+        "pass_criteria": "Title contains meaningful text",
+        "severity": "Critical",
+        "example_pass": "<title>Apple iPhone 17 Pro Max</title>",
+        "example_fail": "<title></title>",
+        "notes": "Treat empty and whitespace-only titles as failures.",
+        "selected": true
+      },
+      {
+        "source": "Client",
+        "category": "Title Tag Optimization",
+        "check_name": "Special Characters",
+        "description": "Avoid excessive symbols or symbols that reduce readability",
+        "pass_criteria": "Minimal separators (-, |, :) used appropriately",
+        "severity": "Minor",
+        "example_pass": "Apple iPhone 17 Pro Max | Apple",
+        "example_fail": "!!! Apple $$$ iPhone ### Buy Now !!!",
+        "notes": "",
+        "selected": true
+      }
+    ]
+  }
+]

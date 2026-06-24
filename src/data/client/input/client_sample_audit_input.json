@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.harveynorman.com.au/samsung-65-inch-s95f-4k-oled-smart-ai-tv.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/samsung-65-inch-s90f-oled-4k-vision-ai-smart-tv.html",
+    "ai_result": "Fail"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/samsung-65-inch-s85f-oled-4k-vision-smart-ai-tv.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/dyson-v8-stick-vacuum.html",
+    "ai_result": "Fail"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/dyson-cyclone-v10-stick-vacuum-purple-iron.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/breville-barista-express-manual-coffee-machine-1.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/delonghi-nespresso-pixie-capsule-coffee-machine-silver.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/nespresso-vertuo-lattissima-capsule-coffee-machine-by-de-longhi.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/nespresso-citiz-solo-capsule-coffee-machine-by-de-longhi-black.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/nespresso-citiz-milk-coffee-machine-by-delonghi-black.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/jbl-bar-1000mk2-7-1-4-channel-dolby-atmos-soundbar-with-detachable-speakers.html",
+    "ai_result": "Fail"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/google-pixel-9a-128gb-obsidian.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/playstation-portal-remote-player-midnight-black.html",
+    "ai_result": "Fail"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/instax-mini-13-instant-camera-dreamy-purple.html",
+    "ai_result": "Pass"
+  },
+  {
+    "url": "https://www.harveynorman.com.au/lg-65-inch-b6-ai-4k-oled-smart-tv-2026.html",
+    "ai_result": "Fail"
+  }
+]
