@@ -29,7 +29,7 @@ export default function Header() {
             boxShadow={"1px 1px 8px 0px #ccc"}
         >
             <Heading fontSize={25} color="#1D2A44" textAlign="center" as="h2" px="3">
-                Data-X - HTL Quality Audit
+                HITL - Quality Audit
             </Heading>
             <Stack p="1" w="35%" direction="row" alignItems="center" justifyContent="flex-end">
                 <Flex gap={2} p="5px 10px" justifyContent={"center"}>
