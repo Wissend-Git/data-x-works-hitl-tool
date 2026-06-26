@@ -24,14 +24,14 @@ export async function POST(req: Request) {
 
     existing.push(body);
 
-    fs.writeFileSync(
-        filePath,
-        JSON.stringify(
-            existing,
-            null,
-            2
-        )
-    );
+    // fs.writeFileSync(
+    //     filePath,
+    //     JSON.stringify(
+    //         existing,
+    //         null,
+    //         2
+    //     )
+    // );
 
     return NextResponse.json({
         success: true
