@@ -62,32 +62,6 @@ export default function AuditForm({
 
     const [saving, setSaving] = useState(false);
 
-    
-    useEffect(() => {
-        
-        try {
-            
-            const saved =
-            localStorage.getItem(
-                    "auditResults"
-                );
-
-                if (saved) {
-
-                    setAuditResults(
-                    JSON.parse(saved)
-                );
-
-            }
-            
-        } catch (error) {
-
-            console.error(error);
-            
-        }
-        
-    }, []);
-    
     const currentAudit = assignedAudits[currentIndex];
     
     useEffect(() => {
@@ -190,62 +164,6 @@ export default function AuditForm({
         }));
     };
 
-    // const handleFinalSubmit = async () => {
-
-    //     if (
-    //         auditResults.length !==
-    //         assignedAudits.length
-    //     ) {
-
-    //         toaster.create({
-    //             title:
-    //                 "Please audit all products before submitting",
-    //             type: "warning",
-    //         });
-
-    //         return;
-    //     }
-
-    //     try {
-
-    //         const response = await fetch(
-    //             "/api/save-audit",
-    //             {
-    //                 method: "POST",
-    //                 headers: {
-    //                     "Content-Type":
-    //                         "application/json",
-    //                 },
-    //                 body: JSON.stringify(
-    //                     auditResults
-    //                 ),
-    //             }
-    //         );
-
-    //         const result =
-    //             await response.json();
-
-    //         if (result.success) {
-
-    //             toaster.create({
-    //                 title:
-    //                     "Audit file generated successfully",
-    //                 type: "success",
-    //             });
-
-    //         }
-
-    //     } catch (error) {
-
-    //         toaster.create({
-    //             title:
-    //                 "Failed to save audit file",
-    //             type: "error",
-    //         });
-
-    //     }
-    // };
-
     const handleFinalSubmit = async () => {
 
         if (
@@ -260,34 +178,46 @@ export default function AuditForm({
             });
 
             return;
-
         }
 
         try {
 
-            localStorage.setItem(
-                "auditResults",
-                JSON.stringify(auditResults)
+            const response = await fetch(
+                "/api/save-audit",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type":
+                            "application/json",
+                    },
+                    body: JSON.stringify(
+                        auditResults
+                    ),
+                }
             );
 
-            toaster.create({
-                title:
-                    "Audit submitted successfully",
-                type: "success",
-            });
+            const result =
+                await response.json();
+
+            if (result.success) {
+
+                toaster.create({
+                    title:
+                        "Audit file generated successfully",
+                    type: "success",
+                });
+
+            }
 
         } catch (error) {
 
-            console.error(error);
-
             toaster.create({
                 title:
-                    "Failed to save audit",
+                    "Failed to save audit file",
                 type: "error",
             });
 
         }
-
     };
 
     const handleSaveAudit = async (
@@ -326,34 +256,7 @@ export default function AuditForm({
                     user
                 );
 
-            // setAuditResults((prev) => {
-
-            //     const existingIndex =
-            //         prev.findIndex(
-            //             (item) =>
-            //                 item.url ===
-            //                 currentAudit.url
-            //         );
-
-            //     if (existingIndex >= 0) {
-
-            //         const updated = [...prev];
-
-            //         updated[existingIndex] =
-            //             payload;
-
-            //         return updated;
-            //     }
-
-            //     return [
-            //         ...prev,
-            //         payload,
-            //     ];
-            // });
-
             setAuditResults((prev) => {
-
-                let updated;
 
                 const existingIndex =
                     prev.findIndex(
@@ -364,28 +267,20 @@ export default function AuditForm({
 
                 if (existingIndex >= 0) {
 
-                    updated = [...prev];
+                    const updated = [...prev];
 
                     updated[existingIndex] =
                         payload;
 
-                } else {
-
-                    updated = [
-                        ...prev,
-                        payload,
-                    ];
-
+                    return updated;
                 }
 
-                localStorage.setItem(
-                    "auditResults",
-                    JSON.stringify(updated)
-                );
-
-                return updated;
-
+                return [
+                    ...prev,
+                    payload,
+                ];
             });
+
 
             toaster.create({
                 title: "Audit saved",

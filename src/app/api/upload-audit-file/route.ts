@@ -91,12 +91,12 @@ export async function POST(
         if (
             !fs.existsSync(uploadDir)
         ) {
-            // fs.mkdirSync(
-            //     uploadDir,
-            //     {
-            //         recursive: true,
-            //     }
-            // );
+            fs.mkdirSync(
+                uploadDir,
+                {
+                    recursive: true,
+                }
+            );
         }
 
         const filePath = path.join(
